@@ -24,7 +24,7 @@ ADD guacamole.properties /etc/guacamole/guacamole.properties
 #Instlal CloudflareD
 RUN apt update 
 RUN apt install wget -y
-RUN wget https://github.com/cloudflare/cloudflared/releases/download/2022.9.1/cloudflared-linux-amd64.deb -O /root/cloudflared.deb
+RUN wget https://github.com/cloudflare/cloudflared/releases/download/2022.10.0/cloudflared-linux-amd64.deb -O /root/cloudflared.deb
 RUN dpkg -i /root/cloudflared.deb
 RUN rm /root/cloudflared.deb
 
